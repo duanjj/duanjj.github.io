@@ -1,0 +1,48 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Jason"><meta name="description" content="要使用Hexo，需要在你的系统中支持Nodejs以及Git，如果还没有，请自行先安装！且这里主要是针对MacOS系统。安装Hexo1$npminstallhexo-cli-ghexo全局安装一次就够了，后面可以直接使用hexo相关的操作。初始化Hexo1$hex"><meta name="keywords" content=""><title>Hexo + Github Pages搭建博客 · Jason</title><link rel="icon" href="/favicon.ico"><link rel="canonical" href="http://jasder.github.io/2013/12/27/use-hexo/"><link rel="alternate" href="/atom.xml" title="Jason"><link rel="stylesheet" href="/fonts/iconfont/iconfont.css"><link rel="stylesheet" href="/css/style.css"><script type="text/javascript">var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?Your baidu Analytics ID";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'Your Google Analytics ID', 'auto');
+ga('send', 'pageview');</script></head><body><div id="main"><header><a href="/." class="logo">Jason</a><ul class="nav"><li class="nav-link"><a href="/" target="_self">Home</a></li><li class="nav-link"><a href="/archives/" target="_self">Archives</a></li><li class="nav-link"><a href="/categories/" target="_self">Categories</a></li><li class="nav-link"><a href="/tags/" target="_self">Tags</a></li><li class="nav-link"><a href="/about/" target="_self">About</a></li></ul></header><section id="container"><article class="post"><h1 class="post-title">Hexo + Github Pages搭建博客</h1><span class="post-time">Dec 27, 2013</span><div id="sidebar" class="post-sidebar"><h3 class="heading">Contents</h3><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装Hexo"><span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#初始化Hexo"><span class="toc-text">初始化Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装依赖"><span class="toc-text">安装依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启动Hexo"><span class="toc-text">启动Hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo的一些常用命令"><span class="toc-text">Hexo的一些常用命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用简写"><span class="toc-text">常用简写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用组合"><span class="toc-text">常用组合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本博客用的themes"><span class="toc-text">本博客用的themes</span></a></li></ol></div><div class="post-content"><p>要使用Hexo，需要在你的系统中支持Nodejs以及Git，如果还没有，请自行先安装！且这里主要是针对Mac OS系统。</p>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-cli -g</div></pre></td></tr></table></figure>
+<p>hexo全局安装一次就够了，后面可以直接使用hexo相关的操作。</p>
+<h3 id="初始化Hexo"><a href="#初始化Hexo" class="headerlink" title="初始化Hexo"></a>初始化Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init [folder]</div></pre></td></tr></table></figure>
+<p>新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。</p>
+<a id="more"></a>
+<h3 id="安装依赖"><a href="#安装依赖" class="headerlink" title="安装依赖"></a>安装依赖</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install</div></pre></td></tr></table></figure>
+<p>安装hexo需要的一些依赖包。</p>
+<h3 id="启动Hexo"><a href="#启动Hexo" class="headerlink" title="启动Hexo"></a>启动Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p> 启动本地web服务，用于博客的预览;成功启动后方可访问: <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000</a></p>
+<h3 id="Hexo的一些常用命令"><a href="#Hexo的一些常用命令" class="headerlink" title="Hexo的一些常用命令"></a>Hexo的一些常用命令</h3><p><strong>新建文章</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new &lt;title&gt;</div></pre></td></tr></table></figure></p>
+<p>此时在source文件夹中便会多出一个文档”title.md”.</p>
+<p><strong>生成静态页面</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate (也可用简写 hexo g)</div></pre></td></tr></table></figure></p>
+<p>该命令用于生产静态文件，生成的静态内容在public文件夹内。</p>
+<p><strong>清除生成内容</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div></pre></td></tr></table></figure></p>
+<p>执行此操作会清除缓存文件 (db.json) 和已生成的静态文件 (public)。</p>
+<p><strong>部署Hexo</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy（也可用简写hexo d）</div></pre></td></tr></table></figure></p>
+<p>部署播客到远端平台（比如github, heroku等平台）</p>
+<p><strong>调试模式启动hexo</strong><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo --debug</div></pre></td></tr></table></figure></p>
+<h3 id="常用简写"><a href="#常用简写" class="headerlink" title="常用简写"></a>常用简写</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo n == hexo new</div><div class="line">$ hexo g == hexo generate</div><div class="line">$ hexo s == hexo server</div><div class="line">$ hexo d == hexo deploy</div></pre></td></tr></table></figure>
+<h3 id="常用组合"><a href="#常用组合" class="headerlink" title="常用组合"></a>常用组合</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo d -g <span class="comment">#生成部署</span></div><div class="line">$ hexo s -g <span class="comment">#生成预览</span></div></pre></td></tr></table></figure>
+<h3 id="本博客用的themes"><a href="#本博客用的themes" class="headerlink" title="本博客用的themes"></a>本博客用的themes</h3><p><a href="https://github.com/ahonn/hexo-theme-even" target="_blank" rel="external">hexo-theme-even</a></p>
+</div></article><div class="tags"></div><div class="paginator"><a href="/2014/09/26/mac-tool-tree/" class="prev"><i class="iconfont icon-left"></i><span> Prev</span></a><a href="/2013/11/24/ccat/" class="next"><span>Next</span><i class="iconfont icon-right"></i></a></div><section id="comments"><div id="disqus_thread"></div></section><script type="text/javascript">var disqus_config = function () {
+    this.page.url = 'http://jasder.github.io/2013/12/27/use-hexo/';
+    this.page.identifier = '2013/12/27/use-hexo/';
+    this.page.title = 'Hexo + Github Pages搭建博客';
+};
+(function() {
+var d = document, s = d.createElement('script');
+
+s.src = '//Your disqus ID.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();</script></section><footer><div class="social"><a href="mailto:jasduaner@gmail.com" title="email" class="iconfont icon-email"></a><a href="https://github.com/jasder" title="github" class="iconfont icon-github"></a></div><div class="copyright"><p class="since">&copy;2013-2017<span class="heart"><i class="iconfont icon-heart"></i></span><span class="author">Jason</span></p></div><div id="back2top"><i class="iconfont icon-up"></i></div></footer></div><script src="/js/zepto.min.js"></script><script src="/js/theme.js"></script></body></html>
